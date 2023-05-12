@@ -1,16 +1,28 @@
 import { useEffect } from 'react'
-import axios from 'axios'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './components/Home'
+import Potter from './components/projects/Potter'
+import Battleships from './components/projects/Battleships'
+import Foodstagram from './components/projects/Foodstagram'
+import Wanderlust from './components/projects/Wanderlust'
+import Story from './components/projects/Story'
 
 const App = () => {
-  useEffect(() => {
-    const getData = async () => {
-      const { data } = await axios.get('/api/products/') // * <-- replace with your endpoint
-      console.log(data)
-    }
-    getData()
-  })
-
-  return <h1>Hello World</h1>
+  return (
+    <div id="wrapper">
+      <BrowserRouter>
+        {/* <Socials /> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Story" element={<Story />} />
+          <Route path="/Potter" element={<Potter />} />
+          <Route path="/Battleships" element={<Battleships />} />
+          <Route path="/Foodstagram" element={<Foodstagram />} />
+          <Route path="/Wanderlust" element={<Wanderlust />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  )
 }
 
 export default App

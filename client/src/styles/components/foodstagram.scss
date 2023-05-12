@@ -1,0 +1,27 @@
+// #foodstagram {
+//   background-color: #f3f397e5;
+//   color: black;
+// }
+
+// #food-title {
+//   border-bottom: 2px solid black;
+// }
+
+#foodstragram-content {
+  margin: 10px 0 10px 0;
+  display: flex;
+}
+
+#foodstgram-image {
+  background-image: url(../../images/foodstagram2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 465px;
+  width: 260px;
+}
+
+#foodstagram-description {
+  // margin: 10px 0 10px 0;
+  max-width: 250px;
+}
