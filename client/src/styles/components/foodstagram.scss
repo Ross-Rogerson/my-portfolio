@@ -1,15 +1,25 @@
-// #foodstagram {
-//   background-color: #f3f397e5;
-//   color: black;
-// }
+.food-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: black;
+  color: $text-colour;
+  width: 580px;
+  border: 1px solid $text-colour;
+  border-radius: 5px;
+}
 
-// #food-title {
-//   border-bottom: 2px solid black;
-// }
+#foodstagram-display {
+  width: 100%;
+}
 
 #foodstragram-content {
-  margin: 10px 0 10px 0;
+  margin: 10px;
   display: flex;
+  display: flex;
+  justify-content: space-between;
 }
 
 #foodstgram-image {

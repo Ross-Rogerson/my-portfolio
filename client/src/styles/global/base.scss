@@ -63,6 +63,35 @@
   color: $text-colour;
 }
 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity as needed */
+  z-index: 999;
+}
+
+.modal-header {
+  font-size: $heading-size;
+  color: $heading-colour;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.modal-title {
+  font-weight: lighter;
+  font-size: $title-size;
+  display: inline;
+  color: $heading-colour;
+  margin: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 @media only screen and (min-width: 380px) {
 
   #page-content {

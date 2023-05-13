@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Socials from './common/Socialsbar'
 import FoodstagramModal from './modals/Foodstagram'
-// import Modal from 'react-modal'
+import Modal from 'react-modal'
 
-// Modal.setAppElement('#root')
+Modal.setAppElement('#root')
 
 const Home = () => {
   const [foodstagramOpen, setFoodstagramOpen] = useState(false)
@@ -13,13 +13,17 @@ const Home = () => {
     setFoodstagramOpen(true)
   }
 
-  // useEffect(() => {
-  //   console.log(foodstagramOpen)
-  // }, [foodstagramOpen])
-
   const closeFoodstagram = () => {
     setFoodstagramOpen(false)
   }
+
+  useEffect(() => {
+    if (foodstagramOpen) {
+      document.body.classList.add('no-scroll')
+    } else {
+      document.body.classList.remove('no-scroll')
+    }
+  }, [foodstagramOpen])
 
   return (
     <main id="home">
