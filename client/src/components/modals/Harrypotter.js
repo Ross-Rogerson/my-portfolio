@@ -23,7 +23,7 @@ const HpModal = ({ hpOpen, closeHp }) => {
             <div id="hp-description" className="description">
               <div className="description-heading">Description</div>
               <div className="description-text">
-                My colleague and I successfully built a 
+                During this project, my colleague and I successfully built a 
                 React application in two days that efficiently consumed a third-party 
                 API. The app displayed information about Harry Potter characters and 
                 movies. The project helped to enhance my understanding of React 

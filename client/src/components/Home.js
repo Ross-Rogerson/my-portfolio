@@ -80,9 +80,11 @@ const Home = () => {
               <div id="memoji-container">
                 <div id="memoji"></div>
               </div>
-              <h1 className="title" id="home-title">Ross Rogerson</h1>
-              <div className="sub-heading" id="home-sub-heading">
-                Full-stack Engineer
+              <div id="heading-container">
+                <h1 className="title" id="home-title">Ross Rogerson</h1>
+                <div className="sub-heading" id="home-sub-heading">
+                  Full-stack Engineer
+                </div>
               </div>
             </div>
           </div>
@@ -240,7 +242,7 @@ const Home = () => {
               </div>
               <div className="experience-point" id="uni">
                 <div className="experience-date">
-                  Apr &apos;19 - Oct &apos;22
+                  Sep &apos;13 - Jun &apos;16
                 </div>
                 <div className="experience-description">
                   <span className="experience-heading">BSc Mathematics with Finance | University of Brighton</span>

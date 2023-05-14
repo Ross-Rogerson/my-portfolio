@@ -4,17 +4,17 @@
 
 #locked-content {
   max-width: inherit;
+  margin-top: 5px;
 }
 
 #me {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
 #memoji-container {
   background-color: $heading-colour;
-  width: 110px;
+  width: 90px;
   aspect-ratio: 1/1;
   border-radius: 100px;
   margin-bottom: 10px;
@@ -24,10 +24,14 @@
   background-image: url(../../images/me_copy-removebg-preview.png);
   background-position: center;
   background-size: cover;
-  width: 110px;
+  width: 90px;
   aspect-ratio: 1/1;
   border: 1px solid black;
   border-radius: 100px;
+}
+
+#heading-container {
+  margin-left: 10px;
 }
 
 #about,
@@ -69,7 +73,7 @@
   background-position: center;
   background-repeat: no-repeat;
   margin: 10px;
-  border: 1px solid $text-colour;
+  border: 1.5px solid $text-colour;
   border-radius: 10px;
   width: 100%;
   aspect-ratio: 1/1;
@@ -96,7 +100,7 @@
   color: $heading-colour;
   font-size: $heading-size;
   background-color: rgba(0, 0, 0, 0.8);
-  width: 100%;
+  width: 101%;
   height: 100%;
   display: flex;
   align-items: center;
