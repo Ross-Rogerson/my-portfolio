@@ -45,15 +45,12 @@
   margin-bottom: 0;
 }
 
-
-
 .modal-title {
   font-weight: lighter;
   font-size: $title-size;
   display: inline;
   color: $heading-colour;
   margin: 0;
-  margin-left: calc(50% - 61.88px);
 }
 
 .description, .group-text {
@@ -121,7 +118,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 1px solid $text-colour;
+  border: 1px solid black;
   border-radius: 5px;
 }
 

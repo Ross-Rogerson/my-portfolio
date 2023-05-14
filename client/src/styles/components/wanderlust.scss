@@ -1,0 +1,13 @@
+#wanderlust-image {
+  background-image: url(../../images/wanderlust.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 1.4/1;
+  margin-top: 10px;
+}
+
+#wanderlust-title {
+  margin-left: calc(50% - (105.44px / 2));
+}

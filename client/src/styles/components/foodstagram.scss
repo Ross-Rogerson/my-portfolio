@@ -1,9 +1,12 @@
+#foodstagram-title {
+  margin-left: calc(50% - (123.73px / 2));
+}
 #foodstagram-text-content {
   width: 100%;
   display: block;
 }
 
-  #foodstgram-image {
+  #foodstagram-image {
     margin-top: 10px;
     background-image: url(../../images/foodstagram2.png);
     height: 465px;
@@ -11,7 +14,7 @@
   }
 
 @media only screen and (min-width: 580px) {
-  #foodstragram-content {
+  #foodstagram-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,7 +22,7 @@
   #foodstagram-text-content {
     max-width: 270px;
   }
-  #foodstgram-image {
+  #foodstagram-image {
     background-image: url(../../images/foodstagram2.png);
     height: 465px;
     width: 260px;

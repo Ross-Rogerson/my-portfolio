@@ -1,0 +1,13 @@
+#hp-image {
+  background-image: url(../../images/hp.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 1.4/1;
+  margin-top: 10px;
+}
+
+#hp-title {
+  margin-left: calc(50% - (208.94px / 2));
+}

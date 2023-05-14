@@ -14,7 +14,7 @@ const FoodstagramModal = ({ foodstagramOpen, closeFoodstagram }) => {
           <h1 className="modal-title" id="foodstagram-title">Foodstagram</h1>
           <button className="close-button" onClick={closeFoodstagram}></button>
         </div>
-        <section id="foodstragram-content" className="modal-content">
+        <section id="foodstagram-content" className="modal-content">
           <section id="foodstagram-text-content">
             <div className="group">
               <div className="group-heading">Timeframe & Group Size</div>
@@ -44,7 +44,7 @@ const FoodstagramModal = ({ foodstagramOpen, closeFoodstagram }) => {
               </div>
             </div>
           </section>
-          <div id="foodstgram-image" className="modal-image"></div>
+          <div id="foodstagram-image" className="modal-image"></div>
         </section>
         {/* <button className="close-button" onClick={closeFoodstagram}>Close</button> */}
       </section>

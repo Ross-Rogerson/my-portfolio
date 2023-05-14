@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import Socials from './common/Socialsbar'
 import FoodstagramModal from './modals/Foodstagram'
 import WanderlustModal from './modals/Wanderlust'
+import BattleshipsModal from './modals/Battleships'
+import HpModal from './modals/Harrypotter'
 import Modal from 'react-modal'
 
 Modal.setAppElement('#root')
@@ -10,6 +12,8 @@ Modal.setAppElement('#root')
 const Home = () => {
   const [foodstagramOpen, setFoodstagramOpen] = useState(false)
   const [wanderlustOpen, setWanderlustOpen] = useState(false)
+  const [battleshipsOpen, setBattleshipsOpen] = useState(false)
+  const [hpOpen, setHpOpen] = useState(false)
 
   const openFoodstagram = () => {
     setFoodstagramOpen(true)
@@ -27,13 +31,29 @@ const Home = () => {
     setWanderlustOpen(false)
   }
 
+  const openBattleships = () => {
+    setBattleshipsOpen(true)
+  }
+
+  const closeBattleships = () => {
+    setBattleshipsOpen(false)
+  }
+
+  const openHp = () => {
+    setHpOpen(true)
+  }
+
+  const closeHp = () => {
+    setHpOpen(false)
+  }
+
   useEffect(() => {
-    if ((foodstagramOpen || wanderlustOpen)) {
+    if (foodstagramOpen || wanderlustOpen || battleshipsOpen || hpOpen) {
       document.body.classList.add('no-scroll')
     } else {
       document.body.classList.remove('no-scroll')
     }
-  }, [foodstagramOpen, wanderlustOpen])
+  }, [foodstagramOpen, wanderlustOpen, battleshipsOpen, hpOpen])
 
   return (
     <main id="home">
@@ -45,6 +65,14 @@ const Home = () => {
         <WanderlustModal
           wanderlustOpen={wanderlustOpen}
           closeWanderlust={closeWanderlust}
+        />
+        <BattleshipsModal
+          battleshipsOpen={battleshipsOpen}
+          closeBattleships={closeBattleships}
+        />
+        <HpModal
+          hpOpen={hpOpen}
+          closeHp={closeHp}
         />
         <div id="page-content">
           <div id="locked-content">
@@ -77,19 +105,15 @@ const Home = () => {
                 Wanderlust
               </div>
             </div>
-            <div className="project" id="p2">
-              <Link to={'/potter'} className="homepage-link">
-                <div >
-                  Harry Potter <br /> Database
-                </div>
-              </Link>
+            <div className="project" id="p2" onClick={openHp}>
+              <div className="homepage-link">
+                Harry Potter <br /> Database
+              </div>
             </div>
-            <div className="project" id="p1">
-              <Link to={'/battleships'} className="homepage-link">
-                <div>
-                  Toy Story <br /> Battleships Game
-                </div>
-              </Link>
+            <div className="project" id="p1" onClick={openBattleships}>
+              <div className="homepage-link">
+                Toy Story <br /> Battleships Game
+              </div>
             </div>
           </section>
           <section id="skills">
