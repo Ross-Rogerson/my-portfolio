@@ -88,6 +88,15 @@
   margin: 0;
 }
 
+.description {
+  font-size: $text-size;
+}
+
+.description-heading {
+  color: $heading-colour;
+  font-size: $heading-size;
+}
+
 .no-scroll {
   overflow: hidden;
 }

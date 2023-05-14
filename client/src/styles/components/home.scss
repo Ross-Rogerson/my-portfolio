@@ -137,6 +137,7 @@
 
 .skill-name {
   font-size: $text-size;
+  text-align: center;
 }
 
 #react {
@@ -189,6 +190,11 @@
 
 #django {
   background-image: url(../../images/icons/django.svg);
+}
+
+#rest {
+  background-image: url(../../images/icons/rest.png);
+  border-radius: 100px;
 }
 
 #python {

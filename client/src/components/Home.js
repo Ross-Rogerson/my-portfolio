@@ -2,12 +2,14 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Socials from './common/Socialsbar'
 import FoodstagramModal from './modals/Foodstagram'
+import WanderlustModal from './modals/Wanderlust'
 import Modal from 'react-modal'
 
 Modal.setAppElement('#root')
 
 const Home = () => {
   const [foodstagramOpen, setFoodstagramOpen] = useState(false)
+  const [wanderlustOpen, setWanderlustOpen] = useState(false)
 
   const openFoodstagram = () => {
     setFoodstagramOpen(true)
@@ -17,13 +19,21 @@ const Home = () => {
     setFoodstagramOpen(false)
   }
 
+  const openWanderlust = () => {
+    setWanderlustOpen(true)
+  }
+
+  const closeWanderlust = () => {
+    setWanderlustOpen(false)
+  }
+
   useEffect(() => {
-    if (foodstagramOpen) {
+    if ((foodstagramOpen || wanderlustOpen)) {
       document.body.classList.add('no-scroll')
     } else {
       document.body.classList.remove('no-scroll')
     }
-  }, [foodstagramOpen])
+  }, [foodstagramOpen, wanderlustOpen])
 
   return (
     <main id="home">
@@ -31,6 +41,10 @@ const Home = () => {
         <FoodstagramModal
           foodstagramOpen={foodstagramOpen}
           closeFoodstagram={closeFoodstagram}
+        />
+        <WanderlustModal
+          wanderlustOpen={wanderlustOpen}
+          closeWanderlust={closeWanderlust}
         />
         <div id="page-content">
           <div id="locked-content">
@@ -54,18 +68,14 @@ const Home = () => {
           <div id="links-title">Projects</div>
           <section id="projects">
             <div className="project" id="p4" onClick={openFoodstagram}>
-              {/* <Link to={'/foodstagram'} className="homepage-link"> */}
               <div className="homepage-link">
                 Foodstagram
               </div>
-              {/* </Link> */}
             </div>
-            <div className="project" id="p3">
-              <Link to={'/wanderlust'} className="homepage-link">
-                <div >
-                  Wanderlust
-                </div>
-              </Link>
+            <div className="project" id="p3" onClick={openWanderlust}>
+              <div className="homepage-link">
+                Wanderlust
+              </div>
             </div>
             <div className="project" id="p2">
               <Link to={'/potter'} className="homepage-link">
@@ -108,6 +118,10 @@ const Home = () => {
               <div className="skill">
                 <span className="skill-icon" id="react" ></span>
                 <span className="skill-name">React</span>
+              </div>
+              <div className="skill">
+                <span className="skill-icon" id="rest" ></span>
+                <span className="skill-name">REST Framework</span>
               </div>
               <div className="skill">
                 <span className="skill-icon" id="express" ></span>

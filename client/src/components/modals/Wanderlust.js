@@ -1,32 +1,32 @@
 import Modal from 'react-modal'
 
-const FoodstagramModal = ({ foodstagramOpen, closeFoodstagram }) => {
+const WanderlustModal = ({ wanderlustOpen, closeWanderlust }) => {
   return (
     <Modal
-      isOpen={foodstagramOpen}
-      onRequestClose={closeFoodstagram}
-      contentLabel="Foodstagram Modal"
+      isOpen={wanderlustOpen}
+      onRequestClose={closeWanderlust}
+      contentLabel="Wanderlust Modal"
       overlayClassName="modal-overlay"
       className="custom-modal"
     >
-      <section id="foodstagram-display" className="modal-display">
+      <section id="wanderlust-display" className="modal-display">
         <div className="modal-header">
-          <h1 className="modal-title" id="foodstagram-title">Foodstagram</h1>
-          <button className="close-button" onClick={closeFoodstagram}></button>
+          <h1 className="modal-title" id="wanderlust-title">Wanderlust</h1>
+          <button className="close-button" onClick={closeWanderlust}></button>
         </div>
         <section id="foodstragram-content" className="modal-content">
-          <section id="foodstagram-text-content">
+          <section id="wanderlust-text-content">
             <div className="group">
               <div className="group-heading">Timeframe & Group Size</div>
               <div className="group-text">12 Days | Solo</div>
             </div>
-            <div id="foodstagram-description" className="description">
+            <div id="wanderlust-description" className="description">
               <div className="description-heading">Description</div>
               <div className="description-text">
-                Foodstagram is Instagram, for food lovers. The app was built using PostgreSQL database, Django web framework, REST API, and React. Foodstagram includes several impressive features, including the ability to add ingredients from various recipes to a shopping list and search recipes based on user-selected ingredients. The project was a great opportunity for me to improve my knowledge of SQL databases and practise my Python skills. I also gained valuable experience in planning and prioritisation while working under tight deadlines.
+                wanderlust is Instagram, for food lovers. The app was built using PostgreSQL database, Django web framework, REST API, and React. wanderlust includes several impressive features, including the ability to add ingredients from various recipes to a shopping list and search recipes based on user-selected ingredients. The project was a great opportunity for me to improve my knowledge of SQL databases and practise my Python skills. I also gained valuable experience in planning and prioritisation while working under tight deadlines.
               </div>
             </div>
-            <div id="foodstagram-technologies" className="technologies-content">
+            <div id="wanderlust-technologies" className="technologies-content">
               <div className="description-heading">Technologies</div>
               <div className="technologies">
                 <span className="modal-icon" id="js" ></span>
@@ -46,10 +46,9 @@ const FoodstagramModal = ({ foodstagramOpen, closeFoodstagram }) => {
           </section>
           <div id="foodstgram-image" className="modal-image"></div>
         </section>
-        {/* <button className="close-button" onClick={closeFoodstagram}>Close</button> */}
       </section>
     </Modal>
   )
 }
 
-export default FoodstagramModal
+export default WanderlustModal

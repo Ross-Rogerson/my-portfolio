@@ -1,37 +1,29 @@
-.food-modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  background-color: black;
-  color: $text-colour;
-  width: 580px;
-  border: 1px solid $text-colour;
-  border-radius: 5px;
-}
-
-#foodstagram-display {
+#foodstagram-text-content {
   width: 100%;
+  display: block;
 }
 
-#foodstragram-content {
-  margin: 10px;
-  display: flex;
-  display: flex;
-  justify-content: space-between;
-}
+  #foodstgram-image {
+    margin-top: 10px;
+    background-image: url(../../images/foodstagram2.png);
+    height: 465px;
+    width: 260px;
+  }
 
-#foodstgram-image {
-  background-image: url(../../images/foodstagram2.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 465px;
-  width: 260px;
-}
-
-#foodstagram-description {
-  // margin: 10px 0 10px 0;
-  max-width: 250px;
+@media only screen and (min-width: 580px) {
+  #foodstragram-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #foodstagram-text-content {
+    max-width: 270px;
+  }
+  #foodstgram-image {
+    background-image: url(../../images/foodstagram2.png);
+    height: 465px;
+    width: 260px;
+    margin-top: 0;
+    display: block;
+  }
 }
