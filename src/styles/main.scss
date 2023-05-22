@@ -1,0 +1,19 @@
+@import 'components/variables';
+@import 'global/base';
+@import 'components/home';
+@import 'components/socials';
+@import 'components/battleships';
+@import 'components/foodstagram';
+@import 'components/wanderlust';
+@import 'components/potter';
+@import 'components/modal';
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

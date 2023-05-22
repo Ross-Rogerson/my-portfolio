@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4090a315.css",
+    "main.js": "/static/js/main.afd7337a.js",
+    "static/media/hp.png": "/static/media/hp.c2c0a46a2ce734a5ba1d.png",
+    "static/media/wanderlust.png": "/static/media/wanderlust.6bc7d16ff4d46466b899.png",
+    "static/media/battleships.png": "/static/media/battleships.33bca76a00e8ddd45c71.png",
+    "static/media/foodstagram.jpeg": "/static/media/foodstagram.92caa9fe8657b9e77db5.jpeg",
+    "static/media/foodstagram2.png": "/static/media/foodstagram2.f4fba479205e0445a236.png",
+    "static/media/me_copy-removebg-preview.png": "/static/media/me_copy-removebg-preview.d3bed08ff9abb7694975.png",
+    "static/media/tableplus.png": "/static/media/tableplus.27110b4fcf0072a2b7a9.png",
+    "static/media/x.png": "/static/media/x.39e3465ed1eb4476902f.png",
+    "static/media/rest.png": "/static/media/rest.b5cabfd72e08086497af.png",
+    "static/media/insomnia.png": "/static/media/insomnia.3c574d70fbbc16e0a6a1.png",
+    "static/media/express.png": "/static/media/express.9b344d7469dbbdc76754.png",
+    "static/media/postgresql.svg": "/static/media/postgresql.fb72630d5328248abee4.svg",
+    "static/media/sass.svg": "/static/media/sass.30ae756ce5354ab94348.svg",
+    "static/media/react.svg": "/static/media/react.7c738c950f567912bdc2.svg",
+    "static/media/node-js.svg": "/static/media/node-js.e2ed98d8d21db30db785.svg",
+    "static/media/python.svg": "/static/media/python.9b153b2bf9e2e7e2d6de.svg",
+    "static/media/mongodb.svg": "/static/media/mongodb.44df644c46fe7e0f75a3.svg",
+    "static/media/django.svg": "/static/media/django.17679d577901e58f87fd.svg",
+    "static/media/javascript.svg": "/static/media/javascript.e206981b82558648a701.svg",
+    "index.html": "/index.html",
+    "static/media/css.svg": "/static/media/css.b2d580078d2ad6af28d7.svg",
+    "static/media/html5.svg": "/static/media/html5.f9109ed6690c7d0e28a0.svg",
+    "main.4090a315.css.map": "/static/css/main.4090a315.css.map",
+    "main.afd7337a.js.map": "/static/js/main.afd7337a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4090a315.css",
+    "static/js/main.afd7337a.js"
+  ]
+}
