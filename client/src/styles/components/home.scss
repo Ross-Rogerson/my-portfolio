@@ -47,6 +47,7 @@
 
 #about-text,
 #skill-icons {
+  max-width: calc(100vw - 40px);
   margin: 10px 0 10px 0;
 }
 
@@ -101,7 +102,7 @@
   color: $heading-colour;
   font-size: $heading-size;
   background-color: rgba(0, 0, 0, 0.8);
-  width: 101%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -250,6 +251,10 @@
 }
 
 @media only screen and (min-width: 500px) {
+  #about-text,
+  #skill-icons {
+    margin: 10px 0 10px 0;
+  }
 
   #p4,
   #p3,
@@ -261,21 +266,17 @@
 
 @media only screen and (min-width: 600px) {
 
-  #about-text,
+  // #about-text,
   .interest {
-    padding-right: 30px;
+    padding-right: 10px;
   }
 
   #projects {
     padding-right: 10px;
   }
 
-  #skills {
-    padding-right: 25px
-  }
-
   .experience-text {
-    margin-right: 30px;
+    margin-right: 20px;
   }
 
   .experience-point {

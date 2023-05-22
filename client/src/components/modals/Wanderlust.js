@@ -36,7 +36,7 @@ const WanderlustModal = ({ wanderlustOpen, closeWanderlust }) => {
             <div id="wanderlust-technologies" className="technologies-content">
               <div className="description-heading">Technologies</div>
               <div className="technologies">
-                <span className="modal-icon" id="js" ></span>
+                <span className="modal-icon" id="js"></span>
                 <span className="modal-icon" id="mongo" ></span>
                 <span className="modal-icon" id="react" ></span>
                 <span className="modal-icon" id="express" ></span>

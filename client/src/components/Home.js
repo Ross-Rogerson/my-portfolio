@@ -83,7 +83,7 @@ const Home = () => {
               <div id="heading-container">
                 <h1 className="title" id="home-title">Ross Rogerson</h1>
                 <div className="sub-heading" id="home-sub-heading">
-                  Full-stack Engineer
+                  Junior Full-stack Engineer
                 </div>
               </div>
             </div>
@@ -266,11 +266,12 @@ const Home = () => {
               <div id="cooking" className="interest">
                 <span className="interest-title">Cooking</span>
                 <span className="interest-text">
-                  This is an interest I developed during lockdown. I enjoy it as it allows me to experiment with delicious new recipes, such as &nbsp;
+                  This is an interest I developed during lockdown. I enjoy it as it allows me to experiment with delicious new recipes, such as 
+                  {' '}
                   <Link to="https://ottolenghi.co.uk/recipes/spicy-mushroom-lasagne-flavour-pg-228" id="recipe-link">this
                     mushroom lasagna
                   </Link>
-                  &nbsp;
+                  {' '}
                   by Ottolenghi.
                 </span>
               </div>
