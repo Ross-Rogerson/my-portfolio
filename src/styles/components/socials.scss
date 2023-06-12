@@ -2,12 +2,10 @@
 #socials {
   width: 40px;
   right: 0;
-  // margin: 0 15px 15px 15px;
   margin-right: 1vw;
   margin-top: 1vw;
   position: fixed;
   height: 100%;
-  // overflow-y: scroll;
 }
 
 #linkedin, #github, #email {
@@ -33,6 +31,8 @@
 
 #linkedin{
   margin-top: 5px;
+  margin-left: 2px;
+  animation: pulse-linkedin 2s;
 }
 
 #linkedin:hover {
@@ -41,6 +41,14 @@
 
 #github, #email {
   margin-top: 20px;
+}
+
+#github {
+  animation: pulse-git-home 2s;
+}
+
+#email {
+  animation: pulse-email 2s;
 }
 
 #github:hover {
@@ -53,6 +61,45 @@
 
 #email:hover {
   color: rgb(121, 194, 254);
+}
+
+@keyframes pulse-git-home {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.6);
+    color: #78f37c;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-linkedin {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.6);
+    color: rgb(73, 191, 255);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-email {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.6);
+    color: rgb(150, 207, 253);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 #line {
@@ -68,7 +115,6 @@
   #socials {
     margin-top: 5vw;
     margin-right: calc(50vw - 290px);
-    // margin-right: 5vw;
     }
 }
 

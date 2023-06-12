@@ -71,6 +71,23 @@
   overflow: hidden;
 }
 
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
 @media only screen and (min-width: 380px) {
 
   #page-content {
@@ -82,7 +99,7 @@
 
   #page-content {
     max-width: 305px;
-    padding-right: 20px;
+    // padding-right: 20px;
   }
 }
 
@@ -115,6 +132,7 @@
 @media only screen and (min-width: 500px) {
   #page-content {
     max-width: 430px;
+    padding-right: 20px;
   }
 }
 
@@ -127,12 +145,14 @@
 @media only screen and (min-width: 550px) {
   #page-content {
     max-width: 460px;
+    padding-right: 15px;
   }
 }
 
 @media only screen and (min-width: 575px) {
   #page-content {
     max-width: 475px;
+    padding-right: 0px;
   }
 }
 
@@ -150,6 +170,13 @@
     margin-left: calc(50vw - 290px);
   }
 }
+
+@media only screen and (min-width: 625px) {
+  #page-content {
+    padding-right: 10px;
+  }
+}
+
 
 @media only screen and (min-width: 950px) {
   #page-content {

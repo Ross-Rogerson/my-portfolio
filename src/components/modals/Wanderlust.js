@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
@@ -15,8 +14,12 @@ const WanderlustModal = ({ wanderlustOpen, closeWanderlust }) => {
     >
       <section id="wanderlust-display" className="modal-display">
         <div className="modal-header">
-          <Link to="https://github.com/Ross-Rogerson/Travel-Website"><FontAwesomeIcon icon={faGithub} id="modal-github" className="white" /></Link>
-          <Link to="http://travel-website.herokuapp.com/"><FontAwesomeIcon icon={faArrowUpRightFromSquare} id="modal-external" className="white" /></Link>
+          <a href="https://github.com/Ross-Rogerson/Travel-Website" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} id="modal-github" className="white" />
+          </a>
+          <a href="http://travel-website.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} id="modal-external" className="white" />
+          </a>
           <h1 className="modal-title" id="wanderlust-title">Wanderlust</h1>
           <button className="close-button" onClick={closeWanderlust}></button>
         </div>

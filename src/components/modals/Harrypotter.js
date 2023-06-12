@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
@@ -15,8 +14,12 @@ const HpModal = ({ hpOpen, closeHp }) => {
     >
       <section id="hp-display" className="modal-display">
         <div className="modal-header">
-          <Link to="https://github.com/Ross-Rogerson/Harry-Potter-React-App"><FontAwesomeIcon icon={faGithub} id="modal-github" className="white" /></Link>
-          <Link to="https://harry-potter-react-project.netlify.app/"><FontAwesomeIcon icon={faArrowUpRightFromSquare} id="modal-external" className="white" /></Link>
+          <a href="https://github.com/Ross-Rogerson/Harry-Potter-React-App" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} id="modal-github" className="white" />
+          </a>
+          <a href="https://harry-potter-react-project.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} id="modal-external" className="white" />
+          </a>
           <h1 className="modal-title" id="hp-title">Harry Potter Database</h1>
           <button className="close-button" onClick={closeHp}></button>
         </div>

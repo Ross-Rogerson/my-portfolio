@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
@@ -15,8 +14,12 @@ const FoodstagramModal = ({ foodstagramOpen, closeFoodstagram }) => {
     >
       <section id="foodstagram-display" className="modal-display">
         <div className="modal-header">
-          <Link to="https://github.com/Ross-Rogerson/recipe-app"><FontAwesomeIcon icon={faGithub} id="modal-github" className="white" /></Link>
-          <Link to="https://ross-recipe-app.herokuapp.com/"><FontAwesomeIcon icon={faArrowUpRightFromSquare} id="modal-external" className="white" /></Link>
+          <a href="https://github.com/Ross-Rogerson/recipe-app" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} id="modal-github" className="white" />
+          </a>
+          <a href="https://ross-recipe-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} id="modal-external" className="white" />
+          </a>
           <h1 className="modal-title" id="foodstagram-title">Foodstagram</h1>
           <button className="close-button" onClick={closeFoodstagram}></button>
         </div>

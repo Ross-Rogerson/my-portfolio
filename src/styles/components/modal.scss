@@ -58,12 +58,42 @@
   margin-left: 15px;
   height: 25px;
   aspect-ratio: 1/1;
+  color: #238636;
+  animation: pulse-git 2s;
 }
 
 #modal-external {
   margin-left: 15px;
   height: 20px;
   aspect-ratio: 1/1;
+  color: rgb(0, 114, 177);
+  animation: pulse-external 2s;
+}
+
+@keyframes pulse-git {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    color: #78f37c;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-external {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.7);
+    color: rgb(73, 191, 255);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .description, .group-text {

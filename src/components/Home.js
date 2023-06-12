@@ -83,14 +83,14 @@ const Home = () => {
               <div id="heading-container">
                 <h1 className="title" id="home-title">Ross Rogerson</h1>
                 <div className="sub-heading" id="home-sub-heading">
-                  Junior Full-stack Engineer
+                  Junior Full-Stack Engineer
                 </div>
               </div>
             </div>
           </div>
           <div id="about" className="heading">About me</div>
           <div id="about-text">
-            With six years of experience in the financial services industry, I have acquired a diverse skill set. In 2022, witnessing my flatmate&apos;s journey through a software engineering bootcamp, I gained insight into the potential of software engineering skills. Realising that my curiosity and logical mindset would be valuable assets in this field, I decided to move towards a career in the field.
+            With six years of experience in the financial services industry, I have acquired a diverse skill set and experienced significant professional growth. In 2022, witnessing my flatmate&apos;s journey through a software engineering bootcamp, I gained insight into the potential of software engineering skills. Realising that my curiosity and logical mindset would be valuable assets in this field, I decided to move towards a career in the field.
             <br />
             <br />
             As a highly motivated and eager learner, I thrive on immersing myself in projects, whether working independently or as part of a team. I am now seeking opportunities to contribute to innovative projects, hone my engineering skills, and join an organisation that uses technology to move their business forward.
@@ -269,7 +269,7 @@ const Home = () => {
                   This is an interest I developed during lockdown. I enjoy it as it allows me to experiment with delicious new recipes, such as 
                   {' '}
                   <Link to="https://ottolenghi.co.uk/recipes/spicy-mushroom-lasagne-flavour-pg-228" id="recipe-link">this
-                    mushroom lasagna
+                    mushroom lasagne
                   </Link>
                   {' '}
                   by Ottolenghi.
